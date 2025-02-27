@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "new-fastapi"
+version = "0.1.0"
+description = ""
+authors = ["Darya Dyachkova <d.dyachkova@bk.ru>"]
+readme = "README.md"
+packages = [{include = "new_fastapi"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+fastapi = {extras = ["uvicorn"], version = "^0.115.8"}
+pydantic-settings = "^2.7.1"
+httpx = "^0.28.1"
+asyncpg = "^0.30.0"
+greenlet = "^3.1.1"
+sqlalchemy = "^2.0.37"
+alembic = "^1.14.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
